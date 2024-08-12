@@ -22,6 +22,14 @@ export function Home() {
           <Text style={styles.textButton}>+</Text>
         </TouchableOpacity>
       </View>
+
+      <Text style={styles.listTitle}>Compras Pendentes</Text>
+
+      <View style={styles.list}>
+        <Text style={styles.listEmptyText}>
+          Comprou todos os produtos? Adicione produtos a sua lista de compras
+        </Text>
+      </View>
     </View>
   );
 }
@@ -68,5 +76,19 @@ const styles = StyleSheet.create({
     color: "#000",
     fontSize: 16,
     fontWeight: "normal",
+  },
+  listTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 36,
+  },
+  listEmptyText: {
+    fontSize: 16,
+    fontWeight: "normal",
+    textAlign: "center",
+  },
+  list: {
+    flex: 1,
+    justifyContent: "center",
   },
 });
